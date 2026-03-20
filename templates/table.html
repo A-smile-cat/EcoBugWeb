@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>数据表格</title>
+	
+	<!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+    <!-- Standard iPad Touch Icon--> 
+    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+    <!-- Standard iPhone Touch Icon--> 
+    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+	
+	<!-- Styles -->
+    <link href="static/assets3/fontAwesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="static/assets3/css/lib/themify-icons.css" rel="stylesheet">
+    <link href="static/assets3/css/lib/mmc-chat.css" rel="stylesheet" />
+    <link href="static/assets3/css/lib/sidebar.css" rel="stylesheet">
+    <link href="static/assets3/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets3/css/lib/nixon.css" rel="stylesheet">
+    <link href="static/assets3/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <ul>
+                    <li class="active">
+                        <a class="sidebar-sub-toggle"><i class="ti-home"></i>数据总览<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="dashboard1">数据总览 1</a></li>
+                            <li><a href="dashboard2">数据总览 2</a></li>
+                        </ul>
+                    </li>
+                      
+                      
+                    <li><a href="app-profile"><i class="ti-user"></i> 生态评估报告</a></li>
+                    <li><a href="app-widget-card"><i class="ti-layout-grid2-alt"></i> 重要信息</a></li>
+                    <li>
+                        <a class="sidebar-sub-toggle"><i class="ti-layout"></i>图像展示<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="images">珍稀昆虫图像展示</a></li>     
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="sidebar-sub-toggle"><i class="ti-panel"></i>LoRa通信装置组网图<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="datamap">组网图</a></li>   
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i>数据分析图<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="chart">分析图1</a></li>
+                              
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="sidebar-sub-toggle"><i class="ti-layout-grid4-alt"></i> 数据表格 <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="table">表格1</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /# sidebar -->
+    <div class="header">
+        <div class="pull-left">
+            <div class="logo">
+                <a href="#">
+                    <img id="logoImg" src="static/logo/logo1.png" data-logo_big="static/logo/logoSmall2.png" data-logo_small="static/logo/logo1.png" alt="Nixon" />
+                </a>
+            </div>
+            <div class="hamburger sidebar-toggle">
+                <span class="ti-menu"></span>
+            </div>
+        </div>
+        <div class="pull-right p-r-15">
+            <ul>
+                
+                <li class="header-icon dib">
+                    <img class="avatar-img" src="static/assets3/images/avatar/1.jpg" alt="" /> <span class="user-avatar">User<i class="ti-angle-down f-s-10"></i></span>
+                    <div class="drop-down dropdown-profile">
+                        <div class="dropdown-content-heading">
+                            <span class="text-left">Upgrade Now</span>
+                            <p class="trial-day">30 Days Trail</p>
+                        </div>
+                        <div class="dropdown-content-body">
+                            <ul>
+                                <li><a href="#"><i class="ti-settings"></i> <span>Setting</span></a></li>
+                                <li><a href="#"><i class="ti-help-alt"></i> <span>Help</span></a></li>
+
+                                <li><a href="#"><i class="ti-power-off"></i> <span>Logout</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END chat Sidebar-->
+
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 p-0">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <h1>数据表格</h1>
+                            </div>
+                        </div>
+                    </div><!-- /# column -->
+                    <div class="col-lg-4 p-0">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <ol class="breadcrumb text-right">
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href="#">Table</a></li>
+                                    <li class="active">Responsive Table</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div><!-- /# column -->
+                </div><!-- /# row -->
+                <div class="main-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card alert">
+                                <div class="card-header">
+                                    <h4>第一季度采集昆虫数</h4>
+									<div class="card-header-right-icon">
+										<ul>
+											<li class="card-close" data-dismiss="alert"><i class="ti-close"></i></li>
+											<li class="card-option drop-menu"><i class="ti-settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="link"></i>
+												<ul class="card-option-dropdown dropdown-menu">
+													<li><a href="#"><i class="ti-loop"></i> Update data</a></li>
+													<li><a href="#"><i class="ti-menu-alt"></i> Detail log</a></li>
+													<li><a href="#"><i class="ti-pulse"></i> Statistics</a></li>
+													<li><a href="#"><i class="ti-power-off"></i> Clear ist</a></li>
+												</ul>
+											</li>
+											 
+										</ul>
+									</div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>月份</th>
+                                                <th>珍稀昆虫数</th>
+                                                <th>采集数目</th>
+                                                <th>估计数目</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>1月</td>
+                                                <td><span class="badge badge-primary">0</span></td>
+                                                <td>14</td>
+                                                <td class="color-primary">39</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2月</td>
+                                                <td><span class="badge badge-success">0</span></td>
+                                                <td>18</td>
+                                                <td class="color-success">23</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>3月</td>
+                                                <td><span class="badge badge-danger">2</span></td>
+                                                <td>32</td>
+                                                <td class="color-danger">48</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- /# column -->
+                        <div class="col-lg-6">
+                            <div class="card alert">
+                                <div class="card-header">
+                                    <h4>第二季度采集昆虫数</h4>
+									<div class="card-header-right-icon">
+										<ul>
+											<li class="card-close" data-dismiss="alert"><i class="ti-close"></i></li>
+											<li class="card-option drop-menu"><i class="ti-settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="link"></i>
+												<ul class="card-option-dropdown dropdown-menu">
+													<li><a href="#"><i class="ti-loop"></i> Update data</a></li>
+													<li><a href="#"><i class="ti-menu-alt"></i> Detail log</a></li>
+													<li><a href="#"><i class="ti-pulse"></i> Statistics</a></li>
+													<li><a href="#"><i class="ti-power-off"></i> Clear ist</a></li>
+												</ul>
+											</li>
+											 
+										</ul>
+									</div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-responsive table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>月份</th>
+                                                <th>珍稀昆虫数</th>
+                                                <th>采集数目</th>
+                                                <th>估计数目</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>4月</td>
+                                                <td><span class="badge badge-primary">19</span></td>
+                                                <td>154</td>
+                                                <td class="color-primary">309</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>5月</td>
+                                                <td><span class="badge badge-success">28</span></td>
+                                                <td>265</td>
+                                                <td class="color-success">453</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>6月</td>
+                                                <td><span class="badge badge-danger">31</span></td>
+                                                <td>358</td>
+                                                <td class="color-danger">577</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- /# column -->
+                        <div class="col-lg-6">
+                            <div class="card alert">
+                                <div class="card-header">
+                                    <h4>第三季度采集昆虫数</h4>
+									<div class="card-header-right-icon">
+										<ul>
+											<li class="card-close" data-dismiss="alert"><i class="ti-close"></i></li>
+											<li class="card-option drop-menu"><i class="ti-settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="link"></i>
+												<ul class="card-option-dropdown dropdown-menu">
+													<li><a href="#"><i class="ti-loop"></i> Update data</a></li>
+													<li><a href="#"><i class="ti-menu-alt"></i> Detail log</a></li>
+													<li><a href="#"><i class="ti-pulse"></i> Statistics</a></li>
+													<li><a href="#"><i class="ti-power-off"></i> Clear ist</a></li>
+												</ul>
+											</li>
+											 
+										</ul>
+									</div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-responsive table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>月份</th>
+                                                <th>珍稀昆虫数</th>
+                                                <th>采集数目</th>
+                                                <th>估计数目</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>7月</td>
+                                                <td><span class="badge badge-primary">38</span></td>
+                                                <td>387</td>
+                                                <td class="color-primary">598</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>8月</td>
+                                                <td><span class="badge badge-success">43</span></td>
+                                                <td>407</td>
+                                                <td class="color-success">638</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>9月</td>
+                                                <td><span class="badge badge-danger">32</span></td>
+                                                <td>340</td>
+                                                <td class="color-danger">584</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- /# column -->
+                        <div class="col-lg-6">
+                            <div class="card alert">
+                                <div class="card-header">
+                                    <h4>第四季度采集昆虫数</h4>
+									<div class="card-header-right-icon">
+										<ul>
+											<li class="card-close" data-dismiss="alert"><i class="ti-close"></i></li>
+											<li class="card-option drop-menu"><i class="ti-settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="link"></i>
+												<ul class="card-option-dropdown dropdown-menu">
+													<li><a href="#"><i class="ti-loop"></i> Update data</a></li>
+													<li><a href="#"><i class="ti-menu-alt"></i> Detail log</a></li>
+													<li><a href="#"><i class="ti-pulse"></i> Statistics</a></li>
+													<li><a href="#"><i class="ti-power-off"></i> Clear ist</a></li>
+												</ul>
+											</li>
+											 
+										</ul>
+									</div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-responsive table-hover ">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>月份</th>
+                                                <th>珍稀昆虫数</th>
+                                                <th>采集数目</th>
+                                                <th>估计数目</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>10月</td>
+                                                <td><span class="badge badge-primary">20</span></td>
+                                                <td>171</td>
+                                                <td class="color-primary">257</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>11月</td>
+                                                <td><span class="badge badge-success">3</span></td>
+                                                <td>26</td>
+                                                <td class="color-success">56</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>12月</td>
+                                                <td><span class="badge badge-danger">0</span></td>
+                                                <td>13</td>
+                                                <td class="color-danger">29</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+							</div><!-- /# card -->
+						</div><!-- /# column -->
+					</div><!-- /# row -->     </div>
+   
+            </div><!-- /# container-fluid -->
+        </div><!-- /# main -->
+    </div><!-- /# content wrap -->
+
+
+
+
+
+
+
+    <script src="static/assets3/js/lib/jquery.min.js"></script><!-- jquery vendor -->
+    <script src="static/assets3/js/lib/jquery.nanoscroller.min.js"></script><!-- nano scroller -->
+    <script src="static/assets3/js/lib/sidebar.js"></script><!-- sidebar -->
+    <script src="static/assets3/js/lib/bootstrap.min.js"></script><!-- bootstrap -->
+    <script src="static/assets3/js/lib/mmc-common.js"></script>
+    <script src="static/assets3/js/lib/mmc-chat.js"></script>
+    <script src="static/assets3/js/scripts.js"></script><!-- scripit init-->
+
+
+    
+
+
+</body>
+
+</html>

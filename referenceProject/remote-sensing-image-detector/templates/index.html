@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="大规模遥感影像分布式目标检测系统">
+    <title>智能管道缺陷检测系统</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/button.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/button2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .alert {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .alert-error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .upload-area {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .upload-area:hover {
+            border-color: #0eb9d6;
+            background-color: #f0f9ff;
+        }
+        .btn-group {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="satic-area">
+        <div class="dynamic-area1"></div>
+        <div class="dynamic-area2"></div>
+    </div>
+
+    <h1>大规模遥感影像分布式目标检测系统</h1>
+
+    <!-- Flash消息显示 -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <div id="box">Test</div>
+
+    <!-- 上传区域 -->
+    <div class="upload-area">
+        <h2>图像上传</h2>
+        <p>支持的格式: PNG, JPG, JPEG, GIF, BMP, TIFF, WEBP (最大50MB)</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" accept="image/*" required>
+            <br><br>
+            <input type="submit" value="上传并处理" class="niceButton">
+        </form>
+    </div>
+
+    <!-- 按钮组 -->
+    <div class="btn-group">
+        <button onclick="window.location.href='https://engine-aiearth.aliyun.com/#/'"
+                class="niceButton">
+            AI Earth
+        </button>
+        <a href="/upload" class="niceButton" style="text-decoration: none; display: inline-block;">
+            查看上传结果
+        </a>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

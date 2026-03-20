@@ -1,0 +1,68 @@
+# .gitignore 文件
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Flask
+instance/
+.webassets-cache
+
+# Logs
+*.log
+logs/
+
+# Upload files (可选，如果不想提交上传的图片)
+# assets/imgs/upload/*
+# assets/imgs/final/*
+
+# 但保留目录结构
+!.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.bak
+*.swp

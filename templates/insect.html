@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<title>昆虫图像展示</title>
+
+<link href="static/assets1/css/reset_zl_2021519.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<div class="contents"> 
+  <!--图片轮转-->
+  <div  id="picture1" class="poster_box">
+    <div class="caroursel1 poster-main" data-setting='{
+           "width":1060,		
+"height":300,		
+"posterWidth":543,	
+"posterHeight":297,
+"scale":0.85,		
+"speed": 500,	
+"autoPlay":true,	
+"delay":2000,	
+"verticalAlign":"middle"
+        }'>
+      <div class="poster-btn poster-prev-btn"></div>
+      <ul class="poster-list">
+        <li class="poster-item">
+          <div class="item"> <a href="#"><img class="tabImg" src="static/assets1/picture/1.jpg"></a> <span class="poster-item-title">采集时间：2024-03-11</span> </div>
+        </li>
+        <li class="poster-item">
+          <div class="item"> <a href="#"><img class="tabImg" src="static/assets1/picture/2.jpg"></a> <span class="poster-item-title">采集时间：2024-03-15</span> </div>
+        </li>
+        <li class="poster-item">
+          <div class="item"> <a href="#"><img class="tabImg" src="static/assets1/picture/3.jpg"></a> <span class="poster-item-title">采集时间：2024-03-17</span> </div>
+        </li>
+        <li class="poster-item">
+          <div class="item"> <a href="#"><img class="tabImg" src="static/assets1/picture/4.jpg"></a> <span class="poster-item-title">采集时间：2024-03-17</span> </div>
+        </li>
+        <li class="poster-item">
+          <div class="item"> <a href="#"><img class="tabImg" src="static/assets1/picture/5.jpg"></a> <span class="poster-item-title">采集时间：2024-04-12</span> </div>
+        </li>
+      </ul>
+      <ul class="lunbo_btn">
+        <li class="tabBtn"></li>
+        <li class="tabBtn"></li>
+        <li class="tabBtn"></li>
+        <li class="tabBtn"></li>
+        <li class="tabBtn"></li>
+      </ul>
+      <div class="poster-btn poster-next-btn"></div>
+    </div>
+    <!--pc 图片轮转  end--> 
+    
+  </div>
+  <div  id="picture2" class="poster_box">
+    <div class="caroursel2 poster-main" data-setting='{
+           "width":1060,		
+"height":300,		
+"posterWidth":543,	
+"posterHeight":297,
+"scale":0.85,		
+"speed": 500,	
+"autoPlay":true,	
+"delay":2000,	
+"verticalAlign":"middle"
+        }'>
+      <div class="poster-btn poster-prev-btn"></div>
+      <ul class="poster-list">
+        <li class="poster-item">
+          <div class="item"> <a href="#"><img class="tabImg" src="static/assets1/picture/11.png"></a> </div>
+        </li>
+        <li class="poster-item">
+          <div class="item"> <a href="#"><img class="tabImg" src="static/assets1/picture/22.png"></a> </div>
+        </li>
+        <li class="poster-item">
+          <div class="item"> <a href="#"><img class="tabImg" src="static/assets1/picture/33.png"></a> </div>
+        </li>
+        <li class="poster-item">
+          <div class="item"> <a href="#"><img class="tabImg" src="static/assets1/picture/44.png"></a> </div>
+        </li>
+        <li class="poster-item">
+          <div class="item"> <a href="#"><img class="tabImg" src="static/assets1/picture/55.png"></a> </div>
+        </li>
+      </ul>
+      <ul class="lunbo_btn">
+        <li class="tabBtn"></li>
+        <li class="tabBtn"></li>
+        <li class="tabBtn"></li>
+        <li class="tabBtn"></li>
+        <li class="tabBtn"></li>
+      </ul>
+      <div class="poster-btn poster-next-btn"></div>
+    </div>
+    <!--pc 图片轮转  end--> 
+    
+  </div>
+
+  <div id="carousel-content-3">  内容为演示效果使用，目前部分功能不太完善，正在加紧完善！ </div>
+
+  
+</div>
+
+<script src="static/assets1/js/jquery-1.10.2.js"></script>
+<script src="static/assets1/js/jquery.carousel-zl-fb.js"></script><!-- 首页切换 --> 
+<script>Caroursel1.init($('.caroursel1'))</script>
+<script>Caroursel2.init($('.caroursel2'))</script>
+</body>
+</html>

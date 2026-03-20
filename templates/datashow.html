@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>“生态虫踪”——滨海湿地昆虫多样性监测与生态评估系统数据可视化平台</title>
+    <link rel="stylesheet" href="static/assets2/css/datashow.css" />
+  </head>
+  <body class="background-container">
+    <div class="whiteboard-overlay">
+    <!-- 头部 -->
+    <header>
+      <h1 style="font-size: 0.6rem;">“生态虫踪”——滨海湿地昆虫多样性监测与生态评估系统</h1>
+      <div class="show-time"></div>
+      <script>
+        var t = null;
+        t = setTimeout(time, 1000); //开始运行
+        function time() {
+          clearTimeout(t); //清除定时器
+          dt = new Date();
+          var y = dt.getFullYear();
+          var mt = dt.getMonth() + 1;
+          var day = dt.getDate();
+          var h = dt.getHours(); //获取时
+          var m = dt.getMinutes(); //获取分
+          var s = dt.getSeconds(); //获取秒
+          document.querySelector(".show-time").innerHTML =
+            "" +
+            y +
+            "年" +
+            mt +
+            "月" +
+            day +
+            "日-" +
+            h +
+            "时" +
+            m +
+            "分" +
+            s +
+            "秒";
+          t = setTimeout(time, 1000); //设定定时器，循环运行
+        }
+      </script>
+    </header>
+
+    <!-- 页面主体 -->
+    <section class="mainbox">
+      <!-- 左侧盒子 -->
+      <div class="column">
+        <div class="panel bar">
+          <h2>昆虫各目个体数目</h2>
+          <!-- 图表放置盒子 -->
+          <div class="chart"></div>
+          <!-- 伪元素绘制盒子下边角 -->
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line">
+          <h2>砚湖湿地昆虫群落多样性指数变化图
+          </h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie">
+          <h2>昆虫各目个体所占比例</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <!-- 中间盒子 -->
+      <div class="column">
+        <!-- 头部 no模块 -->
+        <div class="no">
+          <div class="no-hd">
+            <ul>
+              <li>1243</li>
+              <li>109</li>
+            </ul>
+          </div>
+          <div class="no-bd">
+            <ul>
+              <li style="font-color: #fff;font-size: 0.3rem">今日总访问人数</li>
+              <li style="font-color: #fff;font-size: 0.3rem">目前使用人数</li>
+            </ul>
+          </div>
+        </div>
+        <!-- map模块 -->
+        <div class="map">
+          
+          <img src="static/assets2/middle.png"/> 
+        </div>
+      </div>
+      <!-- 右侧盒子 -->
+      <div class="column">
+        <div class="panel bar2">
+          <h2>用户角色分布图</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line2">
+          <h2>砚湖湿地昆虫群落多样性指数变化图
+          </h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie2">
+          <h2>昆虫各目物种所占比例</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="static/assets2/js/flexible.js"></script>
+    <script src="static/assets2/js/echarts.min.js"></script>
+    <script src="static/assets2/js/jquery.js"></script>
+    <script src="static/assets2/js/datashow.js"></script>
+    <script src="static/assets2/js/china.js"></script>
+    <!-- 引入china.js 完成地图模块 -->
+    
+    <script src="static/assets2/js/index.js"></script>
+  </div>
+  </body>
+</html>

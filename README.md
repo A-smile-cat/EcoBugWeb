@@ -450,6 +450,19 @@ python manager.py
 
 ---
 
+## ⚠️ 大文件说明
+
+本项目包含一些较大的静态资源文件（图片、PDF、字体、JS 库等）。
+
+**详细说明和获取方式请查看**: [LARGE_FILES.md](LARGE_FILES.md)
+
+快速要点：
+- **图片/媒体文件**: 如需完整功能，请联系项目所有者获取云盘下载链接
+- **JS 库 (ECharts, jQuery 等)**: 可使用 CDN 替代，无需下载
+- **字体文件**: 可从 FontAwesome CDN 获取
+
+---
+
 ## 📄 许可证
 
 MIT License
